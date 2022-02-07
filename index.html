@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<main>
+<body>
   <header class="header">
-    <div class="container-wrap">
+    <div class="container-wrap"> <!-- display: flex -->
       <div class="container-wrap__logo">
           <a href="#">
               <img src="img/logo1.png" alt="logo_img">
@@ -21,39 +21,43 @@
           <span class="main-menu__hamburger">
               <span class="burger-icon js-burger-icon"></span>
           </span>
-          <ul class="main-menu__list">
-              <li class="main-menu__item">
-                  <a href="/" itemprop="url"></a><span class="menu-list">HOME</span>
-              </li>
-              <li class="main-menu__item">
-                  <a href="/company/" itemprop="url"></a><span class="menu-list">COMPANY</span>
-              </li>
-              <li class="main-menu__item">
-                  <a href="/team/" itemprop="url"></a><span class="menu-list">TEAM</span>
-              </li>
-              <li class="main-menu__item">
-                  <a href="/animation/" itemprop="url"></a><span class="menu-list">ANIMATION</span>
-              </li>
-              <li class="main-menu__item">
-                  <a href="/webtoon/" itemprop="url"></a><span class="menu-list">WEBTOON</span>
-              </li>
-              <li class="main-menu__item">
-                  <a href="/webnovel/" itemprop="url"></a><span class="menu-list">WEBNOVEL</span>
-              </li>
-              <li class="main-menu__item">
-                  <a href="/recruit/" itemprop="url"></a><span class="menu-list">RECRUIT</span>
-              </li>
-          </ul>
+          <div class="menu__overlay-list"> <!-- style="display: none; opacity: 0;" -->
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a href="/" itemprop="url"></a><span class="menu-list">HOME</span>
+                </li>
+                <li class="menu__list-item">
+                    <a href="/company/" itemprop="url"></a><span class="menu-list">COMPANY</span>
+                </li>
+                <li class="menu__list-item">
+                    <a href="/team/" itemprop="url"></a><span class="menu-list">TEAM</span>
+                </li>
+                <li class="menu__list-item">
+                    <a href="/animation/" itemprop="url"></a><span class="menu-list">ANIMATION</span>
+                </li>
+                <li class="menu__list-item">
+                    <a href="/webtoon/" itemprop="url"></a><span class="menu-list">WEBTOON</span>
+                </li>
+                <li class="menu__list-item">
+                    <a href="/webnovel/" itemprop="url"></a><span class="menu-list">WEBNOVEL</span>
+                </li>
+                <li class="menu__list-item">
+                    <a href="/recruit/" itemprop="url"></a><span class="menu-list">RECRUIT</span>
+                </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </div>
   </header>
 
-  <section class="mainArea startPage"></section>
-  <section class="mainArea"></section>
-  <section class="mainArea"></section>
-  <section class="mainArea"></section>    
-</main>
+  <main>
+    <section class="mainArea startPage"></section>
+    <section class="mainArea"></section>
+    <section class="mainArea"></section>
+    <section class="mainArea"></section>    
+  </main>
+</body>
 
 <script>
 
