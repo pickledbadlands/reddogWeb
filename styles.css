@@ -30,11 +30,9 @@ body {
   position: fixed;
   top: 0;
   z-index: 3;
+  padding: 24px;
   
-  width: 100%;
-  height: 100%;
-
-  background-color: rgba(255, 255, 255, 0.2);
+  width: 100vw;
 }
 .header-drop {
   transform: translateY(-80px);
@@ -43,41 +41,29 @@ body {
 .container-wrap {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
-  width: 100%;
-}
-
-
-/* ============== header - logo wrap ============= */
-.container-wrap__logo {
-  margin: 24px;
-
-  cursor: pointer;
-}
-
-
-/* =========== header - nav wrap ============ */
-.container-wrap__nav {  
   width: 100%;
   height: 100%;
 }
 
-.main-menu__hamburger {
+/* =========== header - nav wrap ============ */
+.container-wrap__nav { 
+  width: 44px;
+}
+
+.menu__hamburger {
   display: inline-block;
   position: absolute;
   top: 38px;
-  right: 24px;
-
-  width: 42px;
-  height: 32px;
 }
 
 .burger-icon, .burger-icon::before, .burger-icon::after {
   display: block;
   position: absolute;
   
-  width: 42px;
-  height: 3px;
+  width: 44px;
+  height: 2px;
 
   border-radius: 3px;
   background-color: #f50008;
@@ -87,12 +73,12 @@ body {
   content: "";
 }
 
-.burger-icon::before {top: -12px;}
-.burger-icon::after {top: 12px;}
+.burger-icon::before {top: -10px;}
+.burger-icon::after {top: 10px;}
 
 
-/* =========== menu - list wrap ============ */
-.main-menu__overlay-list {
+/* =========== header - nav wrap : list ============ */
+.menu__overlay-list {
   position: fixed;
   left: 0;
   z-index: 10;
@@ -103,8 +89,12 @@ body {
 
   background-color: rgba(0, 0, 0, 0.274)
 }
+.js-overlay {
+  display: none;
+  opacity: 0;
+}
 
-.main-menu__overlay-list ul {
+.menu__overlay-list ul {
   display: flex;
   flex-flow: column nowrap;
   justify-content: start;
@@ -118,7 +108,7 @@ body {
 .list__items {
   margin: .2rem;
   
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   font-weight: 600;
   list-style: none;
 }
@@ -146,4 +136,58 @@ body {
   height: 1.5rem;
 
   background-color: #fff;
+}
+
+
+/* =========== main - intro page =========== */
+.intro-page {
+  background: url(/img/intro-bg.png);
+  background-size: cover;
+  background-color: #0D0F1D;
+}
+
+/* ========= main - intro : title wrap ========= */
+.title-wrap {
+  position: absolute;
+  top: 20vh;
+  left: 19vw;
+}
+.title-wrap h1 {
+  margin: 0;
+  margin-bottom: 6vh;
+
+  font-size: 4.2rem;
+  line-height: 4.2rem;
+}
+.title-wrap span {
+  font-family: 'Times New Roman';
+  font-size: 4.4rem;
+  font-weight: 300;
+}
+.title-wrap p {
+  margin: 5px;
+  
+  font-size: .9rem;
+  font-weight: 100;
+  line-height: 1.3rem;
+}
+
+/* ========= main - intro : scroll wrap ========= */
+.scroll-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 10vh;
+  left: 19vw;
+}
+.scroll-wrap span {
+  margin-bottom: 8px;
+  height: 45px;
+  transform: rotate(-90deg);
+}
+.scroll-wrap img {margin-left: 4px;}
+.text-guide {
+  font-size: .6rem;
+  letter-spacing: .1rem;
 }
