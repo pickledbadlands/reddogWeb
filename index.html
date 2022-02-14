@@ -9,14 +9,14 @@
 
 <body>
   <header class="header">
-    <div class="container-wrap"> <!-- display: flex -->
-      <div class="container-wrap__logo">
+    <div class="header__container"> <!-- display: flex -->
+      <div class="container__logo">
           <a href="#">
               <img src="img/logo1.png" alt="logo_img" style="width: 5rem;">
           </a>
       </div>
 
-      <nav class="container-wrap__nav">
+      <nav class="container__nav">
         <div class="nav__main-menu">
           <span class="menu__hamburger">
               <span class="burger-icon js-burger-icon"></span>
@@ -78,27 +78,49 @@
   </header>
 
   <main>
-    <section class="mainArea intro-page">
-      <div class="title-wrap">
-        <h1>
-          <span class="font-serif">The animation brand</span>
-          <br>loved all over
-          <br>the world.
-        </h1>
-        <p>
-          Something that never existed in the world,
-          <br>Something that will change the world,
-          <br>Create subculture content that contains the world.
-        </p>
+    <section class="main-section intro">
+      <div class="main__container-box">
+        <div class="intro__text-wrap">
+          <h1>
+            <span class="content__header-span">The animation brand</span>
+            <br>loved all over
+            <br>the world.
+          </h1>
+          <p class="content__entry">
+            Something that never existed in the world,
+            <br>Something that will change the world,
+            <br>Create subculture content that contains the world.
+          </p>
+        </div>
+        <article class="scroll-wrap">
+          <span class="text-guide">SCROLL</span>
+          <img src="/img/scroll-icon.png" class="icon-guide" alt="scroll-icon" style="width: 4px; height: 32px;">
+        </article>
       </div>
-      <article class="scroll-wrap">
-        <span class="text-guide">SCROLL</span>
-        <img src="/img/scroll-icon.png" class="icon-guide" alt="scroll-icon" style="width: 4px; height: 32px;">
-      </article>
     </section>
-    <section class="mainArea"></section>
-    <section class="mainArea"></section>
-    <section class="mainArea"></section>    
+    <section class="main-section company">
+      <div class="main__container-box">
+        <div class="content">
+          <h1 class="content__header">
+            <span class="font-serif">We are an</span>
+            <br>All-Round player
+            <p class="content__entry">
+
+            </p>
+          </h1>
+        </div>
+      </div>
+    </section>
+    <section class="main-section">
+      <div class="main__container-box">
+
+      </div>
+    </section>
+    <section class="main-section">
+      <div class="main__container-box">
+
+      </div>
+    </section>    
   </main>
 </body>
 
