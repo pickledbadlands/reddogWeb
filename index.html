@@ -8,119 +8,98 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="header__container"> <!-- display: flex -->
-      <div class="container__logo">
+  <header class="header-off">
+    <div class="fst-container"> <!-- display: flex -->
+      <div class="fst-container__logo">
           <a href="#">
               <img src="img/logo1.png" alt="logo_img" style="width: 5rem;">
           </a>
       </div>
 
-      <nav class="container__nav">
-        <div class="nav__main-menu">
+      <nav class="fst-container__nav">
           <span class="menu__hamburger">
-              <span class="burger-icon js-burger-icon"></span>
+              <span class="burger-icon js-burger"></span>
           </span>
+
           <div class="menu__overlay-list js-overlay"> <!-- style="display: none; opacity: 0;" -->
             <ul>
-                <li class="list__items">
-                    <a href="/" itemprop="url">
-                      <span class="list__title">HOME</span>
-                    </a>
-                </li>
-                <li class="list__items">
-                    <a href="/company/" itemprop="url">
-                      <span class="list__title">COMPANY</span>
-                    </a>
-                </li>
-                <li class="list__items">
-                    <a href="/team/" itemprop="url">
-                      <span class="list__title">TEAM</span>
-                    </a>
-                </li>
-                <li class="list__items">
-                    <a href="/animation/" itemprop="url">
-                      <span class="list__title">ANIMATION</span>
-                    </a>
-                </li>
-                <li class="list__items">
-                    <a href="/webtoon/" itemprop="url">
-                      <span class="list__title">WEBTOON</span>
-                    </a>
-                </li>
-                <li class="list__items">
-                    <a href="/webnovel/" itemprop="url">
-                      <span class="list__title">WEBNOVEL</span>
-                    </a>
-                </li>
-                <li class="list__items">
-                    <a href="/recruit/" itemprop="url">
-                      <span class="list__title">RECRUIT</span>
-                    </a>
-                </li>
-                <li class="list__items">
-                  <div class="list__select-lang">
-                    <img src="img/lang-icon.png" alt="lang-icon" style="width: 1.2rem; height: 1.2rem">
-                    <a href="/"class="lang-list" >
-                      <span>KOR</span>
-                    </a>
-                    <span class="lang-bar lang-list"></span>
-                    <a href="/"class="lang-list" >
-                      <span>ENG</span>
-                    </a>
-                  </div>
-                </li>
+              <li class="list__items">
+                  <a href="/" itemprop="url">
+                    <span class="list__title">HOME</span>
+                  </a>
+              </li>
+              <li class="list__items">
+                  <a href="/company/" itemprop="url">
+                    <span class="list__title">COMPANY</span>
+                  </a>
+              </li>
+              <li class="list__items">
+                  <a href="/team/" itemprop="url">
+                    <span class="list__title">TEAM</span>
+                  </a>
+              </li>
+              <li class="list__items">
+                  <a href="/animation/" itemprop="url">
+                    <span class="list__title">ANIMATION</span>
+                  </a>
+              </li>
+              <li class="list__items">
+                  <a href="/webtoon/" itemprop="url">
+                    <span class="list__title">WEBTOON</span>
+                  </a>
+              </li>
+              <li class="list__items">
+                  <a href="/webnovel/" itemprop="url">
+                    <span class="list__title">WEBNOVEL</span>
+                  </a>
+              </li>
+              <li class="list__items">
+                  <a href="/recruit/" itemprop="url">
+                    <span class="list__title">RECRUIT</span>
+                  </a>
+              </li>
+              <li class="list__items">
+                <div class="list__select-lang">
+                  <img src="img/lang-icon.png" alt="lang-icon" style="width: 1.2rem; height: 1.2rem">
+                  <a href="/"class="lang-list" >
+                    <span>KOR</span>
+                  </a>
+                  <span class="lang-bar lang-list"></span>
+                  <a href="/"class="lang-list" >
+                    <span>ENG</span>
+                  </a>
+                </div>
+              </li>
             </ul>
           </div>
-        </div>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="main-section intro">
-      <div class="main__container-box">
-        <div class="intro__text-wrap">
+    <div class="main-container">
+      <article class="main__intro">
+        <section class="intro__contents">
           <h1>
-            <span class="content__header-span">The animation brand</span>
+            <span class="contents__title">The animation brand</span>
             <br>loved all over
             <br>the world.
           </h1>
-          <p class="content__entry">
+          <p class="contents__desc">
             Something that never existed in the world,
             <br>Something that will change the world,
             <br>Create subculture content that contains the world.
           </p>
-        </div>
-        <article class="scroll-wrap">
-          <span class="text-guide">SCROLL</span>
-          <img src="/img/scroll-icon.png" class="icon-guide" alt="scroll-icon" style="width: 4px; height: 32px;">
-        </article>
-      </div>
-    </section>
-    <section class="main-section company">
-      <div class="main__container-box">
-        <div class="content">
-          <h1 class="content__header">
-            <span class="font-serif">We are an</span>
-            <br>All-Round player
-            <p class="content__entry">
 
-            </p>
-          </h1>
-        </div>
-      </div>
-    </section>
-    <section class="main-section">
-      <div class="main__container-box">
-
-      </div>
-    </section>
-    <section class="main-section">
-      <div class="main__container-box">
-
-      </div>
-    </section>    
+          <div class="intro__scroll-box">
+            <span class="next-text" style="transform: rotate(-90deg); margin-bottom: 8px;">SCROLL</span>
+            <img src="/img/scroll-icon.png" class="next-icon" alt="scroll-icon" style="width: 4px; height: 32px;">
+          </div>
+        </section>
+      </article>
+      
+      
+    </div> 
   </main>
 </body>
 
