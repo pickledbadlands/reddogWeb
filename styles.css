@@ -136,71 +136,101 @@ header {
 
 
 /* ========================== main ============================ */
-.main-container {  
+.main-container { 
+  position: relative;
   width: 100vw;
   height: 100vh;
 }
 
-.contents__header {}
+.main__intro, .main__company {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.intro__contents, .company__contents {
+  margin: 0 auto;
+
+  width: 1180px;
+  height: 100vh;
+}
+
+.contents__header {
+  margin: 0;
+  margin-bottom: 4rem;
+
+  font-size: 4rem;
+  line-height: 4rem;
+  color: #f50008;
+}
+
+.contents__header-serif {
+  font-family: 'Times New Roman';
+  font-size: 4rem;
+  font-weight: 300;
+  color: #fff;
+}
+
 .contents__desc {
+  margin: 0;
   margin-left: .3rem;
-  
-  font-weight: 500;
+
+  font-weight: 300;
   line-height: 1.5rem;
 }
-.contents__title {
-  margin-left: -.3rem;
-  
-  font-family: 'Times New Roman';
-  font-size: 6.875rem;
-  font-weight: 300;
+
+.next-text {
+  height: 50px;
+
+  font-size: .7rem;
+  letter-spacing: .14rem;
 }
+
+.next-icon {
+  margin-left: .4rem;
+}
+
 
 
 /* =========== main : intro area =========== */
 .main__intro {
-  width: 100%;
-  height: 100%;
-
   background: url(/img/intro-bg.png);
   background-size: cover;
 }
 
 
-/* ========= main : intro - title wrap ========= */
 .intro__contents {
-  margin: 0 auto;
-  padding: 15rem 0 0 0;
-
-  width: 1180px;
-  height: 100vh;
+  padding: 16rem 0 0 0;
 }
+
 .intro__contents h1 {
   margin: 0;
-  margin-bottom: 5vh;
+  margin-bottom: 4rem;
 
   font-size: 6.25rem;
   line-height: 6rem;
 }
 
-/* ========= main : intro - scroll wrap ========= */
 .intro__scroll-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 9.5rem;
-}
-.next-text {
-  height: 50px;
 
-  font-size: .7rem;
-  letter-spacing: .1rem;
+  margin-top: 12rem;
 }
-.next-icon {margin-left: 0.3rem;}
+
 
 
 /* ========== main : company area =========== */
-.company__text-wrap {
-  position: absolute;
-  top: 22.5rem;
+.main__company {
+  top: 100%;
 }
+
+.company__contents {
+  display: flex;
+  flex-direction: column;
+  padding: 20rem 0 0 0;
+  
+  background-color: #555;
+}
+
