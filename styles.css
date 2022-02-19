@@ -176,6 +176,11 @@ header {
   line-height: 150%;
 }
 
+.contents__scroll-box {
+  display: flex;
+  align-items: center;
+}
+
 .next-text {
   height: 50px;
 
