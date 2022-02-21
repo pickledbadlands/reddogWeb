@@ -176,20 +176,25 @@ header {
   line-height: 150%;
 }
 
-.contents__scroll-box {
+.contents__next-box {
   display: flex;
   align-items: center;
+  margin-top: 12vh;
 }
 
 .next-text {
-  height: 50px;
+  margin-left: .3vw;
+
+  height: 100%;
 
   font-size: 1.2rem;
   letter-spacing: .1rem;
-}
+  text-decoration: none;
+  color: #fff;
+} 
 
 .next-icon {
-  margin-left: .3vw;
+  margin-left: .6vw;
 }
 
 
@@ -218,23 +223,29 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
   margin-top: 14.4vh;
+}
+
+.intro__scroll-text {
+  margin-bottom: 8px;
+
+  height: 48px;
+
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+  transform: rotate(-90deg);
 }
 
 
 
 /* ========== main : company area =========== */
 .main__company {
-  position: absolute;
-  top: 0;
 }
 
 .company__contents {
   display: flex;
   flex-direction: column;
-  padding: 24vh 0 0 0;
-  
-  background-color: #555;
+ 
+  padding: 28vh 0 0 32vw;
 }
 
