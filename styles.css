@@ -10,14 +10,13 @@
 html {
   font-family: 'IBM Plex Sans';
   font-size: 10px;
+  color: #fff;
+  background-color: #0D0F1D;
 }
 
 body {
   padding: 0;
   margin: 0;
-
-  color: #fff;
-  background-color: #0D0F1D;
 }
 
 
@@ -145,16 +144,8 @@ header {
   height: 100%;
 }
 
-.intro__contents, .company__contents {
-  margin: 0 auto;
-
-  width: 64vw;
-  height: 100vh;
-}
-
 .contents__header {
   margin: 0;
-  margin-bottom: 4vw;
 
   font-size: 6.4rem;
   line-height: 100%;
@@ -168,35 +159,28 @@ header {
 }
 
 .contents__desc {
-  margin: 0;
-  margin-left: .3vw;
+  margin: 2vw 0 12vh .2vw;
 
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 150%;
 }
 
-.contents__next-box {
+.next-btn {
   display: flex;
   align-items: center;
-  margin-top: 12vh;
-}
+  margin-left: .2vw;
 
-.next-text {
-  margin-left: .3vw;
-
-  height: 100%;
-
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   letter-spacing: .1rem;
   text-decoration: none;
   color: #fff;
 } 
-
 .next-icon {
-  margin-left: .6vw;
+  width: 32px;
+  height: 4px;
+  margin-left: 16px;
 }
-
 
 
 /* =========== main : intro area =========== */
@@ -207,6 +191,10 @@ header {
 
 
 .intro__contents {
+  margin: 0 auto;
+  
+  width: 64vw;
+  height: 100vh;
   padding: 12vw 0 0 0;
 }
 
@@ -220,32 +208,64 @@ header {
 }
 
 .intro__scroll-box {
+  margin-top: 16vh;
+}
+
+.scroll-btn {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin-top: 14.4vh;
-}
-
-.intro__scroll-text {
-  margin-bottom: 8px;
-
-  height: 48px;
 
   font-size: 1.2rem;
-  letter-spacing: .1rem;
-  transform: rotate(-90deg);
+  letter-spacing: .2rem;
+  text-decoration: none;
+  color: #fff;
 }
+.scroll-btn span {
+  width: 16px;
+}
+.scroll-icon {
+  width: 4px;
+  height: 32px;
+  margin: 12px 0 0 .3vw;
+}
+
 
 
 
 /* ========== main : company area =========== */
-.main__company {
-}
-
 .company__contents {
   display: flex;
   flex-direction: column;
  
-  padding: 28vh 0 0 32vw;
+  width: 64vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 28vh 0 0 36vw;
 }
 
+
+
+/* ========== main : product area =========== */
+.main__product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 100%;
+}
+
+.product__contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  width: 64vw;
+  height: 50rem;
+  margin-top: 24vh;
+  padding: 0 5vw;
+}
+.product__contents:last-child {margin-bottom: 16vh;}
+
+.product__img-box {
+  width: 46rem;
+}
